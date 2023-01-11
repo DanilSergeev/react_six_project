@@ -1,0 +1,652 @@
+:root {
+    --commonText: rgb(68, 68, 68);
+    --wrapperWidth: 980px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    background-color: snow;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+header,
+footer {
+    padding: 15px 0;
+    background-color: cadetblue;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: var(--wrapperWidth);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 6vh;
+    align-items: center;
+}
+
+header nav {
+    margin: 0 auto;
+    width: var(--wrapperWidth);
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+header nav div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav div a {
+    margin-left: 3vh;
+}
+
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    min-height: 10vh;
+    margin-top: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.modalSection {
+    min-height: 16vh;
+    background-color: #f6f4ff;
+    padding: 30px 0;
+}
+
+.modalSection .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.modalSection .wrapper button {
+    margin-top: 2vh;
+}
+
+.progress_bar {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    height: 7px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50px;
+}
+
+.progress_bar div {
+    transition: all 0.5s linear;
+    background: linear-gradient(90deg, rgb(89, 255, 0) 0%, rgb(0, 136, 255) 100%);
+    height: 100%;
+    width: 100%;
+}
+
+.quizSection {
+    min-height: 18vh;
+}
+
+.quizSection h2 {
+    margin-top: 3vh;
+    font-size: 30px;
+}
+
+.quizSection ul {
+    margin-top: 2vh;
+}
+
+.quizSection ul li {
+    color: var(--commonText);
+    margin-bottom: 1.5vh;
+    list-style: none;
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    padding: 15px 12px;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.quizSection ul li:hover {
+    border: 2px solid rgb(192, 192, 192);
+}
+
+.quizSection button {
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.quizSection p {
+    margin-top: 1vh;
+}
+
+.SocialSection {
+    min-height: 50vh;
+    background-color: rgba(93, 225, 203, 0.36);
+    padding: 30px 0;
+}
+
+.SocialSection .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    min-height: 48vh;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.SocialSection .wrapper input {
+    color: var(--commonText);
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: unset;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.211);
+}
+
+.SocialSection .wrapper input:hover {
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.344);
+}
+
+.SocialSection .wrapper button {
+    margin-top: auto;
+}
+
+.SocialSection .wrapper ul {
+    margin-top: 2vh;
+}
+
+.SocialSection .wrapper li {
+    color: var(--commonText);
+    margin-bottom: 1.5vh;
+    list-style: none;
+    background-color: rgb(239, 239, 239);
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SocialSection .wrapper li span {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(126, 126, 126);
+}
+
+.SocialSection .wrapper li span:hover {
+    color: rgb(0, 0, 0);
+}
+
+.SocialSection .wrapper li div h6 {
+    color: rgb(14, 14, 116);
+    font-weight: bold;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.SocialSection .wrapper li div p {
+    color: var(--commonText);
+    font-size: 12px;
+}
+
+.autor {
+    width: 38px;
+    height: 38px;
+    margin-right: 1vh;
+    border-radius: 50%;
+    border: 1px solid rgb(156, 156, 156);
+}
+
+.calculatorSection {
+    min-height: 28vh;
+}
+
+.calculatorSection .wrapper {
+    margin-top: 8vh;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.308);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 10vh;
+    justify-content: center;
+}
+
+.calc {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calc div {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    width: 50%;
+    background-color: snow;
+    padding: 10px;
+}
+
+.calc div ul {
+    min-height: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+    margin-bottom: 2vh;
+}
+
+.calc div ul li {
+    text-align: center;
+    list-style: none;
+    padding: 8px 0;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+}
+
+.calc div input {
+    padding: 10px 20px;
+    border: unset;
+    box-shadow: 0 0 5px rgb(194, 194, 194);
+}
+
+.currencyActiv {
+    background-color: seagreen;
+    color: white;
+}
+
+/* */
+
+.IMGSesion {
+    min-height: 40vh;
+    background-color: #e6e6ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.IMGSesion .wrapper {
+    width: 70%;
+    margin: 5vh 0;
+}
+
+.IMGSesion .wrapper h2 {
+    font-size: 36px;
+}
+
+.tegs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5vh;
+}
+
+.tegs .activTeg {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.tegs input {
+    border: unset;
+    padding: 0 15px;
+    border-radius: 4px;
+}
+
+.tegs ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tegs ul li {
+    background-color: white;
+    list-style: none;
+    margin-right: 1vh;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.tegs ul li:hover {
+    background-color: rgb(175, 175, 175);
+}
+
+.contentIMG {
+    margin: 2vh 0;
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    width: 92%;
+    box-shadow: 2px 2px 3px 0px #d5d5d5;
+}
+
+.contentIMG h6 {
+    font-size: 19px;
+    margin-top: 0.6vh;
+}
+
+.contentIMG img:first-child {
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+}
+
+.contentIMG img {
+    width: 32%;
+    height: 7vh;
+    transition: all 0.3s linear;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.contentIMG img:hover {
+    transform: scale(1.3);
+}
+
+.displayFotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.paginationIMG {
+    display: flex;
+    justify-content: center;
+}
+
+.paginationIMG li {
+    list-style: none;
+    padding: 7px 13px;
+    background-color: white;
+    border-radius: 9px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.paginationIMG li:hover {
+    background-color: #000;
+    color: white;
+}
+
+ul .paginationLiActiv {
+    background-color: #333;
+    color: white;
+}
+
+.toDoListSection {
+    background-color: #e6e6ff;
+    padding: 7vh 0;
+}
+
+.toDoListDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+}
+
+.toDoListDiv input {
+    border: unset;
+    padding: 8px 15px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px #b5b5b5;
+}
+.toDoListDiv div button{
+    border: unset;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-left: 2vh;
+    background-color: #8484ff;
+    color: white;
+}
+.toDoListDiv div button:hover{
+    background-color: #4c4cd2;
+}
+.toDoListDiv ul{
+    margin: 2vh 0;
+}
+.toDoListDiv ul li{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(61, 61, 61);
+    background-color: #e6e6ff;
+    margin-bottom: 1vh;
+    border-radius: 12px;
+    align-items: center;
+
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.toDoListDiv ul li p{
+    padding: 10px 20px;
+    width: -webkit-fill-available;
+    cursor: pointer;
+}
+.toDoListDiv ul li span{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 21px;
+}
+.toDoListDiv ul li span:hover{
+    color: #000;
+    font-weight: bold;
+}
+.bottomList{
+    display: flex;
+    align-items: center;
+}
+.bottomList div{
+    margin-left: 5vh;
+    display: flex;
+}
+.bottomList div span{
+    font-size: 12px;
+    margin-right: 1vh;
+    box-shadow: 0px 1px 4px #b5b5b5;
+    padding: 4px 12px;
+}
+.bottomList div span:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.activSearchList{
+    background-color: #333;
+    color: white;
+}
+.liTarget{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.garland{
+    width: -webkit-fill-available;  
+    position: absolute;
+    min-height: 3vh;
+    background-image: url(https://uguide.su/item-files/img/girlianda_uguide_ru_1.gif);
+    background-repeat: repeat-x;
+}
+
+
+
+.countdownSeciton{
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 0;
+}
+.dial{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+}
+.displayNone *{
+    display: none;
+}
+.loader{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border:  16px solid #f3f3f3;
+    border-top: 16px solid black;
+    animation: infinite spinLoader 0.8s linear;
+    margin: 0 auto;
+}
+@keyframes spinLoader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.massagerSection{
+    padding: 5vh 0;
+    background-color: rgb(76, 126, 134);
+    display: flex;
+    flex-direction: column;
+}
+.massagerSection ul{
+    margin-top: 4vh;
+    background-color: #e6e6ff;
+    padding: 30px;
+    border-radius: 20px;
+}
+.massagerSection ul li{
+    list-style: none;
+    background-color: white;
+    min-width: 400px;
+    border-radius: 15px;
+    padding: 8px 15px;
+    margin-bottom: 1vh;
+    color: var(--commonText);
+}
+.massagerSection ul li:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.NotesSection{
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+}
+.Notes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+    min-width: var(--wrapperWidth);
+    color: white;
+}
+.Note{
+    max-width: 32vh;
+    min-height: 240px;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #7575b3;
+    display: flex;
+    flex-direction: column;
+}
+.note-activ{
+    background-color: #75b387;
+}
+.note-activ textarea{
+    overflow: hidden;
+    resize: none;
+    border: unset;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    height: 180px;
+    margin-bottom: 1vh;
+}
+.note-activ textarea::placeholder {
+  color: rgba(255, 255, 255, 0.70);  
+}
+.Note p{
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 1vh;
+    cursor: pointer;
+    word-break: break-word;
+}
+.Note div{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Note div p{
+    font-size: 14px;
+    cursor: auto;
+}
+.Note div button{
+    border: unset;
+    background-color: transparent;
+    opacity: 0.7;
+}
+.Note div button:hover {
+    opacity: 1;
+}
+.NotesSection .wrapper input{
+    min-width: 100%;
+    margin: 3vh 0;
+}
+
+.modal{
+    position: fixed;
+    left: 0;top: 0;right: 0;bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.activModal{
+    z-index: 10;
+}
+.searchNotes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,10 @@
+.but{
+    padding: 5px 10px;
+    border: unset;
+    background-color: cadetblue;
+    border-radius: 6px;
+    color: white;
+}
+.but:hover{
+    background-color: rgb(0, 126, 126);
+}
